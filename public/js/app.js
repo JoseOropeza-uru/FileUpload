@@ -22,6 +22,16 @@ function sendFiles() {
             console.log(data);
         });	
 }
+function getFile() {
+    
+    if($('getFile').value.trim()!==''){
+        window.open(`../file/getFile/${$('getFile').value.trim()}`);
+    }
+    else{
+        console.log('Ingrese el nombre de un archivo a buscar');
+    }
+}
 
+$('getFileBut').addEventListener('click',getFile);
 $('sendFile').addEventListener('click',sendFile);
 $('multFiles').addEventListener('click',sendFiles);

@@ -10,6 +10,6 @@ app.get('/', function (req, res) {
 });
 app.use('/',require('./controllers'));
 
-app.listen(3000, function () {
+app.listen(3001, function () {
   console.log('Example app listening on port 3000!');
 });
